@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Random Shakespeare Sonnet Generator</title>
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
+      
+    </head>
+
+    <body>
+        <header>
+            <h1>Shakespeare Sonnet Scrambler</h1>
+            <nav>
+                <a class="nav-child" href="#about">About</a>
+                <a class="nav-child" href="#portfolio">Portfolio</a>
+                <button class="nav-child" id="generate2" onclick="shuffleBtn()">Generate Sonnet</button>
+            </nav>
+
+        </header>
+
+        <div class="flex">
+            <!-- Shakespeare image -->
+            <section class="img-box">
+                <img class="img" src="./assets/img/shakespeare.jpg"
+                alt="Old Shakespeare painting in which he rests his hand on his temple">
+            </section>
+            <!-- A section container for the random sonnet lines to generate into -->
+            <section class="poem-box">
+                <div id="allLines">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </section>
+        </div>
+
+        <br>
+            
+        <!-- Create a button called "generate" with a funtion of "shuffleBtn()" -->
+        <div class="button-center">
+            <button id="generate" onclick="shuffleBtn()">Generate Sonnet</button>
+        </div>
+        
+        <br>
+
+        <section>
+            <h2 id="about" class="subheaders">About This Project</h2>
+            <p class="p-body">This is tool to generate nonsensical Shakespearean poems with no intended purpose other than to practice Javascript randomizers in a structured format.
+            <br><br>Sonnets must follow a specific structure, line by line. That means simply randomizing lines is not enough. When randomly assembling this sonnet, the lines must be randomly generated in a <span>prescribed order</span> (ie. starting with the 1st line of a random poem, then the 2nd line of a random poem and so on).
+            <br><br> I've started with only Shakespeare's most famous poems, but with time and experience I will add more content and features to this generator.</p>
+        </section>
+
+        <footer>
+            <h2 class="subheaders">Thanks for stopping by!</h2> 
+        </footer>
+
+        <script src="./assets/js/JSscript.js"></script>
+    </body>
+
+</html>
